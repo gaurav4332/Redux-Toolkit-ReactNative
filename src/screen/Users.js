@@ -11,7 +11,8 @@ import {useDispatch, useSelector} from 'react-redux';
 import { deleteUser } from '../redux/slice/UserSlice';
 
 const Users = ({navigation}) => {
-  const users = useSelector(state => state.users);
+  const users = useSelector(state => state?.users?.users);
+  console.log(users)
   const dispatch = useDispatch();
   const renderItem = ({item,index}) => (
     <View style={styles.itemContainer}>
@@ -42,7 +43,7 @@ const Users = ({navigation}) => {
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.container}>
-        {users.length > 0 ? ( // Fixed the condition here (changed <0 to >0)
+        {users?.length > 0 ? ( // Fixed the condition here (changed <0 to >0)
           <FlatList
             data={users}
             renderItem={renderItem}
