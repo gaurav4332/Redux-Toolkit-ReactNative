@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ReactToolkit.app"
-               BlueprintName = "ReactToolkit"
-               ReferencedContainer = "container:ReactToolkit.xcodeproj">
+               BuildableName = "redux.app"
+               BlueprintName = "redux"
+               ReferencedContainer = "container:redux.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ReactToolkitTests.xctest"
-               BlueprintName = "ReactToolkitTests"
-               ReferencedContainer = "container:ReactToolkit.xcodeproj">
+               BuildableName = "reduxTests.xctest"
+               BlueprintName = "reduxTests"
+               ReferencedContainer = "container:redux.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactToolkit.app"
-            BlueprintName = "ReactToolkit"
-            ReferencedContainer = "container:ReactToolkit.xcodeproj">
+            BuildableName = "redux.app"
+            BlueprintName = "redux"
+            ReferencedContainer = "container:redux.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactToolkit.app"
-            BlueprintName = "ReactToolkit"
-            ReferencedContainer = "container:ReactToolkit.xcodeproj">
+            BuildableName = "redux.app"
+            BlueprintName = "redux"
+            ReferencedContainer = "container:redux.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
