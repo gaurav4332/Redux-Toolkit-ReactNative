@@ -5,17 +5,19 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Users from '../screen/Users';
 import AddUsers from '../screen/AddUsers';
 import UpdateUser from '../screen/UpdateUser';
+import PostsScreen from '../screen/PostsScreen';
 
 const AppNavigator = () => {
   const stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <stack.Navigator 
-      initialRouteName="Users"
+      initialRouteName="PostsScreen"
       screenOptions={{
         headerShown: false     // Hide header for all screens
       }}
        >
+        <stack.Screen name="PostsScreen" component={PostsScreen} />
         <stack.Screen name="Users" component={Users} />
         <stack.Screen name="AddUsers" component={AddUsers} />
         <stack.Screen name="UpdateUser" component={UpdateUser} />

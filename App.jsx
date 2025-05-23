@@ -4,7 +4,6 @@ import {Provider} from 'react-redux';
 import {persistedStore, store} from './src/redux/store/store';
 import AppNavigator from './src/navigator/AppNavigator';
 import { PersistGate } from 'redux-persist/integration/react';
-
 const App = () => {
   return (
     <Provider store={store}>
@@ -12,7 +11,7 @@ const App = () => {
       <AppNavigator/>
       </PersistGate>
     </Provider>
-  );
+  ); 
 };
 
 export default App;

@@ -25,6 +25,7 @@ const AddUsers = ({ navigation }) => {
     });
   };
   const handleSubmit = () => {
+   
     const newUser = {
         username: formData.username.trim(),
         email: formData.email.trim(),

@@ -2,7 +2,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import UserReducer from "../slice/UserSlice"; // Import your user slice
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Storage for persisting Redux state in React Native
-
+import onlineUserSlice from "../slice/OnlineUserSlice"
 // These are specific imports for redux-persist
 import persistReducer from "redux-persist/es/persistReducer"; // To wrap the root reducer with persistence
 import { persistStore } from "redux-persist"; // To create a persisted store for saving and rehydrating state
@@ -11,6 +11,7 @@ import { persistStore } from "redux-persist"; // To create a persisted store for
 // Even though you only have one reducer now (`UserReducer`), using combineReducers makes it easy to scale in the future
 const rootReducer = combineReducers({
   users: UserReducer, // State will be available under state.users
+  onlineUsers :onlineUserSlice
 });
 
 // Step 2: Configuration object for redux-persist
